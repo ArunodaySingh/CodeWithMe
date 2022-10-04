@@ -4,7 +4,7 @@ using namespace std;
 class Complex
 {
 int a,b;
-friend Complex sumComplex(Complex o1,Complex o2); //friend  <return_type>  <function_name>(argument/s); 
+friend Complex sumComplex(Complex,Complex); //friend  <return_type>  <function_name>(argument/s); 
 public:
 void setNumber(int n1, int n2)
 {
