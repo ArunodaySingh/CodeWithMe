@@ -48,8 +48,8 @@ public:
     {
         A t;
         obj2.x = 9;
-        t.x = x + obj2.x;
-        t.y = y + obj2.y;
+        t.x = this->x + obj2.x;
+        t.y = this->y + obj2.y;
         return (t);
     }
 };
