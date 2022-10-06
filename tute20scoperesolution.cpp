@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int a=5;
+int a=5; // if there's no a present gloablly then compiller through error.
 int main()
 {
 int a=10;
