@@ -32,6 +32,5 @@ int main()
     A obj(n);
     B obj2;
     obj2.output(obj);
-
     return 0;
 }

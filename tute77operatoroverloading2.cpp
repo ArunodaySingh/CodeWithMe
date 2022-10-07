@@ -42,7 +42,8 @@ public:
         t.y = y + obj2.y;
         return (t);
     }
-    A operator-(A obj2) //  if we don't use &(Apperands) then object pass as a call by value but it's not affect the output
+    A operator-(A obj2) // By default operator overloading is done by call by refernce 
+                        //  we can use & or not it's  optional
                         // whatever we can use here(*,/,+,-) it's just use to identify the which opearator
                         // want to call
     {
@@ -60,15 +61,14 @@ int main()
     obj2.input(5, 6);
     obj1.output();
     obj2.output();
-    store = obj1 + obj2; //    Adding two object
-                         //    Note* before operator treas as current instances and after operator treat as
-                         //    as argument which we passed
+    store = obj1 + obj2;  //    Adding two object
+                          //  Note* before operator treas as current instances and after operator treat as
+                          //  as argument which we passed
     store.output();
 
     store = obj1 - obj2; // Just we change the operator and we can treat as unique function
 
     store.output();
-
     return 0;
 }
 
