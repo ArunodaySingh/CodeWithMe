@@ -14,7 +14,7 @@ using namespace std;
 class BaseClass{
 public:
 int data1;
-virtual void Display(int num1){
+virtual void Display(int num1){ // Now, virtual keyword make preference are high of derived classA
 data1=num1;
 cout<<"The data is form Base class "<<data1;
 }
@@ -44,3 +44,9 @@ int main()
     
     return 0;
 }
+
+// Note*  There are 2 qus arises here can we base class are inherit by derived class can we use the derived class object to call
+//        the base class function which have a same name "No we can't" always give the preference to own class
+//        Second qus is if i make a pointer of derived class which point the address of base class can we use that derived class pointer to call
+//        the base class function ans is "No".
+// Now, Then here the impure virtual function role comes if we add the virtual keyword then its overcome the behaviour of the normal flow.      
