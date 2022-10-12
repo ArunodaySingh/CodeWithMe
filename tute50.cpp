@@ -13,10 +13,7 @@ int main()
     //  The new operator is an operator which denotes a request for memory allocation on the Heap.
     // If sufficient memory is available, new operator initializes the memory and returns the address of
     // the newly allocated and initialized memory to the pointer variable.
-    // When you create an object of class using new keyword(normal new).
 
-    // The memory for the object is allocated using operator new from heap.
-    // The constructor of the class is invoked to properly initialize this memory.
 
     int *p = new int(277);
     cout << "It's dynamically alloted memory " << *(p) << endl;
@@ -36,3 +33,14 @@ int main()
 
     return 0;
 }
+
+   
+    // When you create an object of class using new keyword(normal new).
+    // The memory for the object is allocated using operator new from heap.
+    // The constructor of the class is invoked to properly initialize this memory.
+    // Syntax is A *a1 = new A;
+    // new create a memory of A type & this memory should be refer by pointer *a1 which
+    // also have a A type.
+
+    // We can't use 'a1.input()' because it is a refernce of a object.we have to use a1->input() like that first
+    // derefernce then point the function. 
