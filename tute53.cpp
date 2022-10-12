@@ -57,3 +57,8 @@ int main()
     a.getData();
     return 0;
 }
+
+
+//Notes* this is a pointer which help to point something internally. This pointer always point class instance.
+// '.' operator has a higher precedence so compiler read it this.x then * and it give error that why
+// we use -> but instead of arrow operator we can use (*this).x=x it's also work same way.
