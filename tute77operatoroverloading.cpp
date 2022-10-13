@@ -10,8 +10,8 @@ class A
 {
    int x, y;
 
-public:
-   void input(int a, int b)
+public:                         
+   void input(int a,int b) 
    {
       x = a;
       y = b;
@@ -20,20 +20,22 @@ public:
    {
       cout << "x=" << x <<" & "<< "y=" << y<<endl;
    }
-   void operator*()
+   void operator-()
     // whatever we can use here(*,/,+,-) it's just use to identify the which opearator  
     // want to call.
    {
-      x = -x+y;
-      y = -y+x;
+      x = -x+y;    //-3+4 1
+      y = -y+x;    // -4+3 -1
    }
+   
 };
-int main()
+
+int main() //driver code
 {
    A obj;
    obj.input(3,4);
    obj.output();
-   *obj; //{calling the operator function} 
+   -obj; //{calling the operator function} 
    obj.output();
 
    return 0;
