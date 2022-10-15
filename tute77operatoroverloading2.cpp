@@ -32,7 +32,7 @@ public:
         cout << "x=" << x << " & "
              << "y=" << y << endl;
     }
-    A operator+(A &obj2) // call by refernce
+    A operator*(A &obj2) // call by refernce
                         // whatever we can use here(*,/,+,-) it's just use to identify the which opearator
                         // want to call.
     {
@@ -42,17 +42,17 @@ public:
         t.y = y + obj2.y;
         return (t);
     }
-    A operator-(A obj2) // By default operator overloading is done by call by refernce 
-                        //  we can use & or not it's  optional
-                        // whatever we can use here(*,/,+,-) it's just use to identify the which opearator
-                        // want to call
-    {
-        A t;
-        obj2.x = 9;
-        t.x = this->x + obj2.x;
-        t.y = this->y + obj2.y;
-        return (t);
-    }
+    // A operator-(A obj2) // By default operator overloading is done by call by refernce 
+    //                     //  we can use & or not it's  optional
+    //                     // whatever we can use here(*,/,+,-) it's just use to identify the which opearator
+    //                     // want to call
+    // {
+    //     A t;
+    //     obj2.x = 9;
+    //     t.x = this->x + obj2.x;
+    //     t.y = this->y + obj2.y;
+    //     return (t);
+    // }
 };
 int main()
 {
@@ -61,14 +61,14 @@ int main()
     obj2.input(5, 6);
     obj1.output();
     obj2.output();
-    store = obj1 + obj2;  //    Adding two object
+    store = obj1 * obj2;  //    Adding two object
                           //  Note* before operator treas as current instances and after operator treat as
                           //  as argument which we passed
     store.output();
 
-    store = obj1 - obj2; // Just we change the operator and we can treat as unique function
+   // store = obj1 - obj2; // Just we change the operator and we can treat as unique function
 
-    store.output();
+   // store.output();
     return 0;
 }
 
