@@ -16,7 +16,7 @@ public:
 int data1;
 virtual void Display(int num1){ // Now, virtual keyword make preference are high of derived classA
 data1=num1;
-cout<<"The data is form Base class "<<data1;
+cout<<"The data is form Base class "<<data1<<endl;
 }
 };
 
@@ -32,9 +32,11 @@ class DerivedClass:public BaseClass{ //It's should be inherited
 int main()
 {  
     BaseClass * base_class_pointer;
+    BaseClass newobj2;
     DerivedClass obj_derived;
     base_class_pointer = &obj_derived;
-    base_class_pointer->Display(5); 
+    newobj2.Display(6); //this only can possible when we use store the address of  derived class in base class pointer
+    base_class_pointer->Display(5);
     // If i use virtual keryword with the base class
     // function then its overcome the default behaviour 
     // of pointer now pointer called the derived class function 
