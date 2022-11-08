@@ -17,7 +17,7 @@ class A{
 class B:public A
 {
 public:
-void display()
+void display() //function overriding
 {
     cout<<"Base class is A and Derived class is B"<<endl;
 }
