@@ -54,3 +54,16 @@ int main()
 // money transfer, retrieving mini-statements, and so on,
 // but we have no access to the ATM's internal information.
 // Data abstraction can be used to protect data from being accessed by unauthorized methods
+
+/*
+Interface vs Abstract Classes: 
+An interface does not have implementation of any of its methods, 
+it can be considered as a collection of method declarations. 
+In C++, an interface can be simulated by making all methods as pure virtual.
+In Java, there is a separate keyword for interface. 
+
+We can think of Interface as header files in C++, 
+like in header files we only provide the body of the class that is going to implement it.
+Similarly in java in Interface we only provides the body of the class and 
+we write the actual code in whatever class implements it.
+*/

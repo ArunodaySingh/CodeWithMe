@@ -23,7 +23,7 @@ cout<<"The data is form Base class "<<data1<<endl;
 class DerivedClass:public BaseClass{ //It's should be inherited
     public:
     int data2;
-    void Display(int num1){
+     void Display(int num1){
         data2=num1;
         cout<<"The data is from Derived Class "<<data2;
     }
@@ -40,7 +40,7 @@ int main()
     // If i use virtual keryword with the base class
     // function then its overcome the default behaviour 
     // of pointer now pointer called the derived class function 
-    // which have the same name Display()
+    //                              which have the same name Display();
 
 
     
