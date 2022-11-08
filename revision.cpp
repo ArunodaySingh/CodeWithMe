@@ -38,7 +38,7 @@ class B:public A
 };
 int main()
 {
-    B obj;
+    A obj;
  return 0;
 }
 // constructor top to bottom 
