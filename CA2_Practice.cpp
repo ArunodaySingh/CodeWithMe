@@ -252,19 +252,23 @@ void output()
 {
     cout<<x<<" "<<y;
 }
-void operator-();
+A operator+(A &obj);
 };
-void A::operator-()
+A A::operator+(A &obj)
 {
-    x=-x;
-    y=-y;
+    A obj4;
+    obj4.x=x+obj.x;
+    obj4.y=-y+obj.y;
+    return (obj4);
 }
 int main()
 {
-A obj;
-obj.input(4,5);
-obj.output();
--obj;
-obj.output();
+A obj1;
+A obj2;
+A obj3;
+obj1.input(4,5);
+obj2.input(5,6);
+obj3 = (obj1 + obj2);
+obj3.output();
 return 0;
 }
