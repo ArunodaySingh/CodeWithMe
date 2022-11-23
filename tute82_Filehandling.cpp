@@ -1,3 +1,6 @@
+// using seekg and seekp we can move pointer cursor anywhere in the file
+// inf.seekg(-10,ios,cur) where inf is a ifstream object
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -30,9 +33,9 @@ fout << line << endl;
  }
  inf.seekg(5); // move to 5th character
  // Get the rest of the line and print it, moving to line 2
- getline(inf, line);
+ getline(inf, line); // jo content inf mein hai usko line string mein daal do
  cout << line << '\n';
- inf.seekg(8, ios::cur); // move 8 more bytes into file
+ inf.seekg(-10, ios::cur); // move 8 more bytes into file
  // Get rest of the line and print it
  getline(inf, line);
  cout << line << '\n';
