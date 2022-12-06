@@ -4,12 +4,14 @@
 using namespace std;
 
 template< class T1,class T2>
+
 // float funcAverage(T1 a,T2 b)   // Via using function template we can use different data type input same as we do
 // // in class 
 // {
 //     float avg=(a+b)/2.0;
 //     return avg;
 // }
+
 void swap(T1 &a,T2 &b)
 {
 int temp=a;

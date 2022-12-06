@@ -11,8 +11,7 @@ class Complex{
     Complex(T1 x){
         data=x;
     }
-    void display();
-   
+    T1 display();
 
 };
 
@@ -20,7 +19,7 @@ template<class T1> // if we want to define function (not constructor) outside th
 // then we follow the above syntax
 
 //error: 'obj' does not name a type  obj.display(); if we use different class Type  
-void Complex<T1>::display() //syntax
+T1 Complex<class T1>::display() //syntax
 {
     cout<<data;
 }
