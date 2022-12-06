@@ -21,7 +21,6 @@ class vector{
        {
         //code
        }
-
 }
 int main()
 {

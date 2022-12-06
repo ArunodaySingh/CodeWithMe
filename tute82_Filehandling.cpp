@@ -1,5 +1,7 @@
 // using seekg and seekp we can move pointer cursor anywhere in the file
 // inf.seekg(-10,ios,cur) where inf is a ifstream object
+// tellg function tell us pointer point which character and its return it's index
+// using get() function we read the character it's also caleed using ifstream class and get pointer also update after every cout
 
 #include <iostream>
 #include <fstream>
