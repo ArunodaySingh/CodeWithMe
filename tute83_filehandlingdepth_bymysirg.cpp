@@ -1,3 +1,5 @@
+// concept of random access file
+
 #include <iostream>
 #include <fstream>
 using namespace std;

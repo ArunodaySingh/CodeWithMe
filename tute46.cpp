@@ -15,10 +15,10 @@ class constructor
 
 /*
 ??For Virtual CLass(VIP person)
-.The constructor for virtual base classes before an non
-virtual base class
-.If there are multiple virtual base classes, they are invoked in the order 
+. The constructor for virtual base classes before an non
+virtual base class.
+. If there are multiple virtual base classes, they are invoked in the order 
 declared.
-.Any non-virtual base class are the constructed before the derived 
+. Any non-virtual base class are the constructed before the derived 
  class constructor is executed.
 */
