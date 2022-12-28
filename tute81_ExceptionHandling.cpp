@@ -41,13 +41,17 @@ int main()
     {
         if (denomeratore == 0)
         {
-            throw denomeratore;
+            throw 'X';
         }
         result = numerator / denomeratore;
     }
     catch(int e)
     {
         cout<<"Divide with 0 not possible "<<endl;
+    }
+    catch(...) // By default it handle all the type of exception
+    {
+        cout<<"Hum hai to kya gum hai ";
     }
     return 0;
 }

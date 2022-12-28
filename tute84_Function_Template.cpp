@@ -14,7 +14,6 @@ using namespace std;
  t1 sum(t1 &x , t1 &y)
  {
     return x+y;
-    
  }
  template<class t1,class t2> // if i am using one class here that's means 
  t2 sum(t1 &x , t2 &y)
@@ -36,6 +35,8 @@ int main()
 
 
 /*
+Limitation of Template
+
 Generic functions perform the same operation
 for all the versions of a function except the data type differs. 
 Now if we want to perform the differnt functionality along with
