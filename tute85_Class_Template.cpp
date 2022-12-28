@@ -1,5 +1,6 @@
 /*
-Class Template can also be defined similarly to the Function Template. When a class uses the concept of Template, then the class is known as generic class.
+Class Template can also be defined similarly to the Function Template.
+When a class uses the concept of Template, then the class is known as generic class.
 Syntax
 template<class Ttype>  
 class class_name  

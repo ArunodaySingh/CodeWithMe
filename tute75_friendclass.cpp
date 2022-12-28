@@ -3,12 +3,17 @@ using namespace std;
 class A
 {
     int x;
+    void outputbase()
+    {
+        cout<<"I am output of dervied class \n";
+    }
 
 public:
     A(int v)
     {
         x = v;
     }
+    
     friend class B; // here we declare class B as a friend class
                     // pass the A type that means object is A type.
                     // here we don't need to pass a A inside just like
@@ -20,7 +25,7 @@ class B
 public:
     void output(A obj) // Take a A type obj of first class using this we can access the obj variable
     {
-        cout << "x " << obj.x;
+        obj.outputbase();
     }
 };
 
