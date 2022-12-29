@@ -29,7 +29,6 @@
 //     public:
 //     friend  void setdata(A);
 //     friend void use_outside_the_class(A);  //public
-
 // };
 
 // void use_outside_the_class(A obj)

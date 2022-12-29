@@ -23,11 +23,14 @@ int main()
 
     //*******reference variable
     // rishi-->arun-->hero
-    float x = 34.5;
-    float *y = &x;
-    float *z = &y; // declaration of pointer syntax
+    int x = 34.5;
+    int *y = &x;
+    int **z = &y; // declaration of pointer syntax
+    int ***n=&z;
     cout << y << endl
-         << z << endl; // derefernce operator
+         << z << endl
+         << **n <<endl; // derefernce operator
+
 
     // typecasting
     //  cout<<int(x);
