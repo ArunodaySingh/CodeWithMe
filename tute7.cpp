@@ -13,35 +13,35 @@
 using namespace std;
 int main()
 {
-    // Float double literals
-    // float f=34.5;
-    // long double ld=34.5;
-    // double d=48.6;
-    // cout<<sizeof(f)<<endl;
-    // cout<<sizeof(34.5l)<<endl;
-    // cout<<sizeof(d);
+    // float double literals
+    float f = 34.5;
+    long double ld = 34.5;
+    double d = 48.6;
+    cout << sizeof(f) << endl;
+    cout << sizeof(ld) << endl;
+    cout << sizeof(34.165416) << endl;
+    cout << sizeof(d);
 
     //*******reference variable
     // rishi-->arun-->hero
-    int x = 34.5;
-    int *y = &x;
-    int **z = &y; // declaration of pointer syntax
-    int ***n=&z;
-    cout << y << endl
-         << z << endl
-         << **n <<endl; // derefernce operator
-
+    // int x = 34.5;
+    // int *y = &x;
+    // int **z = &y; // declaration of pointer syntax
+    // int ***n = &z;
+    // cout << y << endl
+    //      << z << endl
+    //      << **n << endl; // derefernce operator
 
     // typecasting
     //  cout<<int(x);
 }
 
-// Note 
+// Note
 // *Type Casting are two types Internal or Automatic and External or Manual Internal typecasting done be comiler itself(higher type automatic convert into lower type by compiler) eg.int a;
 // a = 5 / 2 5 / 2 = 2.5 but it print 2 compiler 2 only.
 // But in the case if i want to store int type data into float then we have to do a manual typecasting
 
-// eg. 
+// eg.
 // a=5;
 // b=2;
 // float c;
