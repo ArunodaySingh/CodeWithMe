@@ -1,15 +1,25 @@
 #include <iostream>
 using namespace std;
+
+class Student
+{
+    // data member
+    int a;
+    int b;
+
+public:
+    // Student() {}
+    Student(int a, int b) // argument
+    {
+        this->a = a;
+        this->b = b;
+    }
+};
+
 int main() // userdefined function
 {
-    int a = 5;
-    int *b = &a;
-    int **c = &b;
-    int ***d = &c;
-
-    cout << a << endl;
-    cout << *b << endl;
-    cout << &c << endl;
-    cout << d << endl;
+    Student obj2;
+    Student obj(4, 5);
+    obj2 = obj;
     return 0;
 }

@@ -4,12 +4,13 @@ using namespace std;
 // jb hko kaam kerna padega sbhi data type ka saath tb hum
 // use krenga struct jo user defined data type hoga or hum uska use
 // kerka sbhi premitive data type ko merge kre denga ek saath.
-// struct employee   //here also  add typedef then we cam denote as a ep
-// {
-//     int e_id;
-//     string e_name;
-//     float salary;
-// }; instead of the we can also write this as }ep; that's means ep represent
+struct employee // here also  add typedef then we cam denote as a ep
+{
+    int e_id;
+    string e_name;
+    float salary;
+};
+//  instead of the we can also write this as }ep; that's means ep represent
 // employee user defined data type as ep;
 
 typedef union money // union is basically used for memory management its shared the memory
@@ -35,7 +36,6 @@ int main()
     buy.name = 'c'; // it's override the previous data
     // cout<<buy.car;
     cout << buy.name;
-
     // enum
     enum Meal
     {
