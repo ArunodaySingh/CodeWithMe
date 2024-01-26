@@ -1,6 +1,7 @@
 // class to class conversion
-// 1 For Constructor we use  i1 
-// 2 For operator we use p1 
+// 1 For Constructor we use  i1
+// 2 For operator we use p1
+
 #include <bits/stdc++.h>
 using namespace std;
 class product
@@ -31,7 +32,7 @@ private:
     int b;
 
 public:
-    Item(){}
+    Item() {}
     Item(product p)
     {
         a = p.getM();
@@ -48,7 +49,7 @@ int main()
     product p1;
     p1.setdata(3, 4);
     Item I1;
-    I1 = p1;
+    I1 = p1; // copy constructor
     I1.showdata();
 
     return 0;
